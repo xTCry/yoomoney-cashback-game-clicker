@@ -1,0 +1,9 @@
+node_modules/
+
+screenshots/*
+
+config.json
+debug.log
+yarn-error.log
+
+!*/.gitkeep
