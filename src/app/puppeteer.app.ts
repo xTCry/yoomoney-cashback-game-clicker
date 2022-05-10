@@ -30,7 +30,10 @@ export async function main() {
             await pageYoomoney.goto('https://yoomoney.ru');
 
             if (cookies && Object.keys(cookies).length > 0) {
-                await pageYoomoney.setCookie({ name: 'SessionToken', value: cookies.SessionToken });
+                await pageYoomoney.setCookie(
+                    { name: 'SessionToken', value: cookies.SessionToken },
+                    { name: 'DAT', value: cookies.DAT }
+                );
             }
 
             STEP_ASK && (await questionAsync('Press [Enter] to try Start Check/Auth...'));

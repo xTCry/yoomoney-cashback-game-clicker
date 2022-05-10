@@ -13,6 +13,10 @@ const schema = {
                 default: '',
                 format: String,
             },
+            DAT: {
+                default: '',
+                format: String,
+            },
         },
         login: {
             default: '',

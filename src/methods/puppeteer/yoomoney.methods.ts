@@ -39,7 +39,7 @@ export async function startauthOrSkip(page: puppeteer.Page, login: string, passw
     await page.click('form button[type="submit"]');
     await page.waitForNavigation();
 
-    await page.waitForSelector('.qa-auth-password-form');
+    await page.waitForSelector('.qa-auth-password-page');
     await page.type('form input[name="password"]', password, { delay: 50 });
 
     await page.click('form button[type="submit"]');
